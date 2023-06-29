@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require './spec/fizzbuzz'
+require_relative '../classes//fizzbuzz'
 
 describe '#fizzbuzz' do
   it 'returns "fizz" when given a number divisible by 3' do

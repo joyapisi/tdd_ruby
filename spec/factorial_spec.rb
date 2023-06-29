@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require './spec/factorial_spec'
+require_relative '../classes/factorial'
 
 describe Factorial do
   it 'should return the factorial of a given number' do
