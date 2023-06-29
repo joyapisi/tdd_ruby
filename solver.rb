@@ -1,4 +1,4 @@
-require_relative './raise_exception'
+require_relative 'raise_exception'
 class Solver
   def initialize
     @exception = RaiseException.new
