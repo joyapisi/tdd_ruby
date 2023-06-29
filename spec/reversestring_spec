@@ -1,0 +1,15 @@
+describe '#reverse_string' do
+  it 'reverses a string' do
+    input = "Hello, 1 World!"
+    expected_output = "!dlroW 1,olleH"
+
+    expect(reverse_string(input)).to eq(expected_output)
+  end
+
+  it 'returns an empty string when given an empty string' do
+    input = ""
+    expected_output = ""
+
+    expect(reverse_string(input)).to eq(expected_output)
+  end
+end
