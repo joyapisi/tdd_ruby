@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-
 class Solver
   def factorial(num)
     return 1 if [1, 0].include?(num)
