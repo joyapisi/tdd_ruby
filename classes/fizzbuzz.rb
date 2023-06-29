@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def fizzbuzz(number)
   if (number % 3).zero? && (number % 5).zero?
     'fizzbuzz'

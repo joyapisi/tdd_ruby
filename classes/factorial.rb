@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # The Factorial class provides methods to calculate the factorial of a number.
 class Factorial
   # Calculates the factorial of a given number.
