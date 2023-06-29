@@ -1,19 +1,20 @@
-# # frozen_string_literal: true
+ # frozen_string_literal: true
 
-# class Solver
-#   # factorial
-#   def factorial(num)
-#     return 1 if num.zero?
+ class Solver
+   # factorial
+  def factorial(num)
 
-#     num * factorial(num - 1)
-#   end
+  return 1 if num.zero?
 
-#   def find(num)
-#     raise ArgumentError, 'Argument must be greater than or equal to 0.' if num.negative?
+     num * factorial(num - 1)
+   end
 
-#     factorial(num)
-#   end
-# end
+   def find(num)
+     raise ArgumentError, 'Argument must be greater than or equal to 0.' if num.negative?
+
+     factorial(num)
+   end
+ end
 
 def reverse_string(str)
   reversed = ''
