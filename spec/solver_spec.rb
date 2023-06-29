@@ -6,7 +6,7 @@ require_relative 'solver'
 describe Solver do
   let(:solver) { Solver.new }
 
-  describe Factorial do
+  describe '#factorial' do
     it 'should return the factorial of a given number' do
       calc = Factorial.new
       expect(calc.find(4)).to eq(24)
