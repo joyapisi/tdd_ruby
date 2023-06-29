@@ -1,4 +1,5 @@
-# frozen_string_literal: true
+require 'rspec'
+require_relative 'solver.rb'
 
 describe Solver do
   let(:solver) { Solver.new }

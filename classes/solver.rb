@@ -16,9 +16,25 @@ class Solver
     end
 
    #reverse_a_string
+    # def reverse_string(str)
+    #   return str.reverse
+    # end
     def reverse_string(str)
-      return str.reverse
-    end
+        reversed = ""
+        i = str.length - 1
+        
+        while i >= 0
+          reversed += str[i]
+          i -= 1
+        end
+        
+        return reversed
+      end
+      
+      # Example usage:
+      input = "Hello, World!"
+      reversed_string = reverse_string(input)
+      puts reversed_string
 
    #fizzbuzz
     def fizzbuzz(N)
