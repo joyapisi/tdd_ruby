@@ -1,51 +1,50 @@
 # frozen_string_literal: true
 
 class Solver
-     # factorial
-      def factorial(N)
-        return 1 if N.zero?
+  # factorial
+  def factorial(num)
+    return 1 if num.zero?
 
-        N * factorial(N - 1)
-      end
+    num * factorial(num - 1)
+  end
 
-      def find(N)
-        raise ArgumentError, 'Argument must be greater than or equal to 0.' if N.negative?
+  def find(num)
+    raise ArgumentError, 'Argument must be greater than or equal to 0.' if num.negative?
 
-        factorial(N)
-      end
-    end
+    factorial(num)
+  end
+end
 
-   #reverse_a_string
-    # def reverse_string(str)
-    #   return str.reverse
-    # end
-    def reverse_string(str)
-        reversed = ""
-        i = str.length - 1
-        
-        while i >= 0
-          reversed += str[i]
-          i -= 1
-        end
-        
-        return reversed
-      end
-      
-      # Example usage:
-      input = "Hello, World!"
-      reversed_string = reverse_string(input)
-      puts reversed_string
+# reverse_a_string
+# def reverse_string(str)
+#   return str.reverse
+# end
+def reverse_string(str)
+  reversed = ''
+  i = str.length - 1
 
-   #fizzbuzz
-    def fizzbuzz(N)
-      if N % 3 == 0 && n % 5 == 0
-        return "fizzbuzz"
-      elsif N % 3 == 0
-        return "fizz"
-      elsif N % 5 == 0
-        return "buzz"
-      else
-        return N.to_s
-      end
-    end
+  while i >= 0
+    reversed += str[i]
+    i -= 1
+  end
+
+  reversed
+end
+
+# Example usage:
+input = 'Hello, World!'
+reversed_string = reverse_string(input)
+puts reversed_string
+
+# fizzbuzz
+def fizzbuzz(number)
+  if (number % 3).zero? && (number % 5).zero?
+    'fizzbuzz'
+  elsif (number % 3).zero?
+    'fizz'
+  elsif (number % 5).zero?
+    'buzz'
+  else
+    number.to_s
+  end
 end
